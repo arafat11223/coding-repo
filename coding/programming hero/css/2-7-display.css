@@ -1,0 +1,32 @@
+h3{
+    font-size: 40px;
+}
+.second{
+    /* display:none; */
+    /* visibility: hidden; */
+}
+.blog{
+    margin:40px;
+    border:10px solid tomato;
+    box-shadow: 10px 10px 20px blueviolet;
+}
+.incident{
+    border:2px solid purple;
+    display:block;/*display block dile height kaj korbe
+    naile korbe na*/
+    height:200px;
+
+}
+.header{
+    height:600px;
+    /* background-image:url('messi.jpeg'); */
+    /* background-image: url('../logo.png');1 level uporer file */
+    background-image: url('../image/arafat.jpg');
+    /* background-repeat: none; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+    /* background-size: contain; */
+    background-size: 625px ;
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table with rowspan and colspan</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            
+        }
+        table{
+            border-collapse:collapse;
+            width:600px;
+            height:400PX;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: green;"/>
+            <col span="1" style="background-color: red;"/>
+            <col span="2" style="background-color: rgb(128, 0, 51);"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col" colspan="2">number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">112</td>
+                <td>arafat</td>
+                <td>01735581066</td>
+                <td rowspan="2">01731043542</td>
+            </tr>
+            <tr>
+                <td scope="row">113</td>
+                <td>tamim</td>
+                <td>01715146617</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
