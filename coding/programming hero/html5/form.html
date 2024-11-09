@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        label{
+            display:block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <h2>please fill up the form</h2>
+            <form>
+                <label for="name">Your name:
+                    <input id="name" type="text" placeholder="your name">
+                </label>
+                <!-- <br><br> -->
+                <label for="email">Your email:
+                    <input id="email" type="email" placeholder="your email">
+
+                </label>
+                <fieldset>
+                    <legend>pick one pitha</legend>
+                    <label for="chitoy">
+                        <input type="radio" name="pitha" id="chitoy">chitoy
+                    </label>
+                    <label for="vapa">
+                        <input type="radio" name="pitha" id="vapa">vapa
+                    </label>
+                    <label for="puri">
+                        <input type="radio" name="pitha" id="puri">puri
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>pick one or more vorta</legend>
+                    <label for="sorisa">
+                        <input type="checkbox" id="sorisa" name="vorta">sorisa
+                    </label>
+                    <label for="shutki">
+                        <input type="checkbox" id="shutki" name="vorta">shutki
+                    </label>
+                    <label for="chili">
+                        <input type="checkbox" id="chili" name="vorta">chili
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>special instructor</legend>
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                </fieldset>
+                <input type="reset" value="reset">
+                <input type="submit" value="submit">
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
