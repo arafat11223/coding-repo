@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 int main()
 {
@@ -9,9 +10,7 @@ int main()
     long long sum=0;
     for(int i=0;i<n;i++)
     {
-        sum+=s[i];
-        //cout<<sum<<endl;
-        cout<<sum<<" "<<endl;
+        sum+=s[i]-'0';
     }
     cout<<sum;
 }
