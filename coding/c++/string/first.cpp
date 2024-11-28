@@ -12,4 +12,4 @@ int main()
     cout<<s<<endl;
     char ch='a';
     cout<<int(ch)<<endl;
-    
+}    

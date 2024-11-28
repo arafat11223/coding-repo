@@ -23,6 +23,6 @@ int main()
 {
     derived ob;
     ob.show();
-    cout<<ob.public_var<<endl;
+    //cout<<ob.protected_var<<endl;
     //cout<<ob.protected_var<<endl;//error
 }

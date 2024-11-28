@@ -10,13 +10,15 @@ class base
 };
 class derived: private base
 {
+    protected:
+    int c=19;
     public:
-    int c=9;
+    //int c=9;
     void show()
     {
         cout << "Public (now private): " << public_var << endl; // Accessible
         cout << "Protected (now private): " << protected_var << endl; // Accessible
-        // cout << "Private: " << private_eVar << endl;           // Error: Not accessible
+         //cout << "Private: " << private_var << endl;           // Error: Not accessible
         cout<<public_var;
     }
 };

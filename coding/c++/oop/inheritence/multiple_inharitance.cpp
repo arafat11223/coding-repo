@@ -16,7 +16,7 @@ class parent2
         cout<<"parent 2 class"<<endl;
     }
 };
-class child: public parent1, parent2
+class child: public parent2, parent1
 {
     public:
     child()

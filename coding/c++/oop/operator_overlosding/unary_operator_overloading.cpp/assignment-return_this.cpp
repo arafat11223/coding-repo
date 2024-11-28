@@ -34,5 +34,5 @@ int main()
     int p,q;
     test obj1,obj2(10,20);
     obj1=obj2;
-    //cout<<p<<endl<<q<<endl;
+   //cout<<p<<endl<<q<<endl;
 }

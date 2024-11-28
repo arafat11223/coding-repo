@@ -14,14 +14,16 @@ class test
     {
         cout<<"a: "<<a<<"  "<<"b :"<<b<<endl; 
     }
-    int operator <(test obj)
+
+    void operator <(test obj)
     {
+        
         if((a<obj.a)&&(b<obj.b))
         {
-            return 1;
+            cout<<"obj1 is less then obj2"<<endl;
         }
         else{
-            return 0;
+            cout<<"obj1 is greater then obj2"<<endl;
         }
 
     }
@@ -29,17 +31,17 @@ class test
 };
 int main()
 {
-    test obj1(10,23.45),obj2(5,89.44),obj3;
+    test obj1(1,5.45),obj2(5,89.44),obj3;
     cout<<"obj1 : ";
     obj1.show();
     cout<<"obj2 : ";
     obj2.show();
-    if(obj1<obj2)
-    {
-        cout<<"obj1 is less then obj2"<<endl;
-    }
-    else
-    {
-        cout<<"obj1 is greater then obj2"<<endl;
-    }
+    obj1<obj2;
+    // {
+    //     cout<<"obj1 is less then obj2"<<endl;
+    // }
+    // else
+    // {
+    //     cout<<"obj1 is greater then obj2"<<endl;
+    // }
 }
