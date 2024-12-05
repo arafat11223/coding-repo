@@ -14,6 +14,8 @@ bool palindrome(string s)
         {
             return false;
         }
+        st++;
+        end--;
     }
     return true;
 
