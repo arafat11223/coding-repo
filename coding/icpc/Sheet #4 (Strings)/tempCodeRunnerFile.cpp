@@ -1,34 +1,4 @@
-#include<iostream>
-#include<string>
-#include<algorithm>
-
-
-using namespace std;
-bool palindrome(string s)
-{
-    int st=0;
-    int end=s.length()-1;
-    while(st<end)
-    {
-        if(s[st]!=s[end])
-        {
-            return false;
-        }
-    }
-    return true;
-
-}
-int main()
-{
-    string str;
-    getline(cin,str);
-    if(palindrome(str))
-    {
-        cout<<"YES"<<endl;
-    }
-    else
-    {
-        cout<<"NO"<<endl;
-    }
-    
-}
+if(freq[str[i]-'a']=='0')
+        // {
+        //     continue;
+        // }

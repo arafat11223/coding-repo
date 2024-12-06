@@ -11,7 +11,11 @@ int main()
     }
     for(int i=0;i<str.length();i++)
     {
-        if(str[i]==)
+        if(freq[str[i]-'a']=='0')
+        {
+            continue;
+        }
+        cout<<char(str[i])<<" : "<<freq[str[i]-'a']<<endl;
     }
 
 }
