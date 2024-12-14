@@ -4,7 +4,7 @@ class base
 {
     int a;
     public:
-     virtual void display()//virtual na dile vase function cal hbe
+    void display()//virtual na dile base function call hbe
     {
         cout<<"this is base class function"<<endl;
     }

@@ -15,7 +15,7 @@ class vector
         int d=0;
         for(int i=0;i<size;i++)
         {
-            d+=this->arr[i] * v.arr[i];
+            d+=arr[i] * v.arr[i];
         }
         return d;
 

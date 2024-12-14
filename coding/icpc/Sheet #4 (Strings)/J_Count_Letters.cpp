@@ -1,21 +1,22 @@
 #include<iostream>
+#include<string>
+#include<algorithm>
 using namespace std;
 int main()
 {
     string str;
     getline(cin,str);
-    int freq[26]={0};
+    sort(str.begin(),str.end());
     for(int i=0;i<str.length();i++)
     {
-        freq[str[i]-'a']++;
-    }
-    for(int i=0;i<str.length();i++)
-    {
-        if(freq[str[i]-'a']=='0')
+        char c=str[i];
+        int count=1;
+        while(str[i]==str[i+1])
         {
-            continue;
+            count++;
+            i++;
         }
-        cout<<char(str[i])<<" : "<<freq[str[i]-'a']<<endl;
+        cout<<c<<" : "<<count<<endl;
     }
-
+    
 }

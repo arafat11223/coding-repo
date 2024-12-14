@@ -27,5 +27,7 @@ int main()
     
     sum<float>obj2(7.3,5.5);
     obj2.show();
+    sum<string>obj3("hello"," cooder");
+    obj3.show();
 }
 

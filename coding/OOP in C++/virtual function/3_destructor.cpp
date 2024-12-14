@@ -7,7 +7,7 @@ class base
     {
         cout<<"base constructor called"<<endl;
     }
-    virtual ~base()// virtual na dile destructor 1 bar call hbe base destructor
+    virtual~base()// virtual na dile destructor 1 bar call hbe base destructor
     {
         cout<<"base destructor called"<<endl;
     }

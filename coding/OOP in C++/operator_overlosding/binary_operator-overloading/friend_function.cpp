@@ -19,7 +19,7 @@ class test
 test operator +(test &ob1,test &ob2)
 {
     test t;
-    t.a=ob1.a+ob2.a;
+    t.a=ob1.a-ob2.a;
     t.b=ob1.b+ob2.b;
     return t;
 }
