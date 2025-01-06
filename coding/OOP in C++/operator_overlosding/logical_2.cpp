@@ -13,16 +13,16 @@ class logic
         return a;
 
     }
-    logic  operator &&(logic &ob)
+    bool  operator &&(logic &ob)
     {
-        return logic(a && ob.a);
+        return (a && ob.a);
 
 
     }
 }; 
 int main()
 {
-    logic obj1(true),obj2(1),obj3(1);
+    logic obj1(true),obj2(7),obj3(1);
     if(obj1 && obj2)
     {
         cout<<"obj1 and obj2 is true"<<endl;

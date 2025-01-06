@@ -79,25 +79,35 @@ int main ()
 
     }
     cout<<endl;
-    //infinity input
-    //cout<<"infinity input"<<endl;
-    // int n;
-    // vector<int>d;
-    // while(cin>>n)
-    // {
-    //     if(n==0)
-    //     {
-    //         break;
-    //     }
-    //     d.push_back(n);
-    // }
-    // cout<<"vector c size: "<<d.size()<<endl;
-    // for(auto ele: d)
-    // {
-    //     cout<<ele<<" ";
+    cout<<"sort temp vector non increasing order"<<endl;
+    sort(temp.rbegin(),temp.rend());
+    for(auto ele: temp)
+    {
+        cout<<ele<<" ";
+    }
+    cout<<endl;  
 
-    // }
+    //print last element
+    cout<<"print last element"<<endl;
+    cout<<temp.back()<<endl;
 
+    cout<<"delete last element"<<endl;
+    temp.pop_back(); // o(1)complexity
+
+    cout<<temp.back()<<endl;
+
+    cout<<"print first element"<<endl;
+    cout<<*temp.begin()<<endl;
+
+    cout<<"erase "<<endl;
+    //temp.erase(temp.begin());
+    temp.erase(temp.begin()+2); //o(n) complexity
+    
+    for(auto ele: temp)
+    {
+        cout<<ele<<" ";
+    }
+    cout<<endl;
 
 
 

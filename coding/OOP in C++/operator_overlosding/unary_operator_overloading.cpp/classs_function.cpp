@@ -4,7 +4,7 @@ class test
 {
     int a,b;
     public:
-    test (int x,int y)
+    test (int x=0,int y=0)
     {
         a=x;
         b=y;
@@ -14,7 +14,7 @@ class test
     {
         cout<<"a = "<<a<<"b = "<<b<<endl;
     }
-    test operator -()
+    friend test operator -()
     {
         a=-a;
         b=-b;

@@ -4,9 +4,9 @@ class test
 {
     int n;
     public:
-    test():n(0)
+    test()
     {
-
+        n=0;
     }
     void operator ++()
     {
