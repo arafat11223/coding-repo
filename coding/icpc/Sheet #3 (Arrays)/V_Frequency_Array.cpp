@@ -1,26 +1,30 @@
-#include<iostream>
+#include <iostream>
+#include <algorithm>
+#include <cctype>
+#include <stdio.h>
+#include <bits/stdc++.h>
+ 
 using namespace std;
-int main()
-{
+ 
+ 
+int main(void){
     int n,m;
     cin>>n>>m;
-    int arr[n];
-    int freq[m=1];
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];
-        if(arr[i]==)
+ 
+    int arr[1000001] = {0};
+    for (int i=0; i<n; i++) {
+            int num;
+            cin>>num;
+ 
+            if(arr[num] ==0 )  arr[num]=1;
+            else  arr[num] = arr[num] +1;
+ 
     }
-    for(int i=1;i<=m;i++)
-    {
-        int count=0;
-        for(int j=0;j<n;j++)
-        {
-            if(arr[j]==i)
-            {
-                count++;
-            }
-        }
-        cout<<count<<endl;
-    }
+ 
+    for(int i=1;i<=m;i++){
+		cout<<arr[i]<<endl;
+	}
+ 
+ 
+ 
 }
