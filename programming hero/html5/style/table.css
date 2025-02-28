@@ -1,0 +1,24 @@
+
+td,th{
+    border:1px solid black;
+    padding:10px;
+}
+table{
+    border-collapse: collapse;
+    background-color: aqua;
+}
+nav > ul{
+    display:flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding:5px;
+}
+nav li a{
+    text-decoration: none;
+    color:brown;
+}
+nav li:hover{
+    background-color: gray;
+}

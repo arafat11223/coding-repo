@@ -1,0 +1,2 @@
+original data: 3 4 2 5 7 
+sorted data: 2 3 4 5 7 

@@ -1,0 +1,15 @@
+h1{
+    color:brown;
+    background-color: green;
+}
+p{
+    color:blueviolet;
+    background-color: palevioletred;
+}
+body{
+    
+    background-image: url(messi.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
