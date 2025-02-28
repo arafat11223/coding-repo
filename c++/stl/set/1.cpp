@@ -25,6 +25,7 @@ int main()
     s.insert(8);
     s.insert(0);//log2(n)
     cout<<"size :"<<s.size()<<endl;
+    s.find(8);
     for(auto ele:s)
     {
         cout<<ele<<" ";
