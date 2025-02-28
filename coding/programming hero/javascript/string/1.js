@@ -57,3 +57,15 @@ console.log(text.split(" ",2));
 console.log("----split and join----");
 let test2="boka-choda";
 console.log(test2.split("-").join(" "))
+  
+
+//concat
+console.log("---concat()----")
+const first ="arafat";
+const last="tamim";
+const full_name=first+" "+last;
+//console.log(full_name);
+console.log(first.concat(" ",last));
+
+console.log("---includes()----")
+console.log(last.includes("m"));

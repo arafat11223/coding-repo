@@ -1,17 +1,29 @@
+//https://codeforces.com/contest/1251/p...
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int sum1=0sum2=0;
-    int ans=5;
-    if(sum1<sum2)
+    int test;
+    cin>>test;
+    while(test--)
     {
-        ans+=7;
-
+        string str;
+        cin>>str;
+        for(int i=str.size()-1;i>=0;i--)
+        {
+            for(int j=i-1;j<=i-1;j++)
+            {
+                if(str[i]==str[j])
+                {
+                    i--;
+                    break;
+                }
+                else
+                {
+                    cout<<str[i];
+                }
+            }
+        }
+        cout<<endl;
     }
-    else
-    {
-        ans+=5;
-    }
-    cout<<ans;
-}
+} b
