@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    string str;
+    cin>>str;
+    cout<<str.size()<<endl;
+    map<char,int>cnt;
+    for(int i=0;i<str.size();i++)
+    {
+        cnt[str[i]]++;
+
+    }
+    int ans=cnt.size();
+    cout<<ans<<endl;
+    //cout<cnt["m"]<<endl;
+    if(ans==26)
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+    {
+        cout<<"NO"<<endl;
+    }
+    //cout<<cnt.size()<<endl;
+}
