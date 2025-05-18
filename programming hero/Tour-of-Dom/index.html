@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour of dom</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tour of DOM</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Ipsam voluptatum eos quia nesciunt fugiat, officia 
+             inventore deserunt ex minus fuga ab natus, numquam 
+             architecto 
+            adipisci facere, eaque reprehenderit molestiae! Voluptas!</p>
+
+    </header>
+    <main id="main-container">
+        <section id="fruits-container">
+            <h1>my awesome DOM de baba</h1>
+            <ul>
+                <li>jalali set</li>
+                <li>de dor</li>
+                <li>bonobash</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits">Fruits I like</h1>
+            <ul id="fruits-list">
+                <li>apple</li>
+                <li>banana</li>
+                <li>orange</li>
+            </ul>
+        </section>
+        <section id="places-container" class="front-text">
+            <h1 id="place">places I like to visit</h1>
+            <ul>
+                <li class="place-list">bandarban</li>
+                <li class="place-list">cox's bazar</li>
+                <li class="place-list">saint martins</li>
+                <li>sundarban</li>
+            </ul>
+        </section>
+        <h1 id="change-name">change name</h1>
+
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleInJs.js"></script>
+    
+    <script>
+        const student = {
+            name: "jalali",
+            id: "C241178",
+            study: function (time) {
+                console.log(time, " hour study kortese");
+            }
+        }
+        console.log('adding js inside the html file');
+    </script>
+    <script>
+        // getElementsByTagName
+        const licollection = document.getElementsByTagName('li');
+        console.log(licollection);
+        for (const li of licollection) {
+            console.log(li.innerText);
+
+        }
+        const allheadings = document.getElementsByTagName('h1');
+        for (let h1 of allheadings) {
+            console.log(h1);
+        }
+        // getElementById
+        const id=document.getElementById('place').innerText;
+        console.log(id);
+        const classname=document.getElementsByClassName('place-list');
+        console.log(classname);
+        for(let clas of classname){
+            console.log(clas.innerText);
+        }
+        
+    </script>
+    <script>
+        const changename=document.getElementById('change-name');
+        changename.innerText='name change successfully by js';
+    </script>
+    <!-- querySelectorAll -->
+     <script>
+        const someli=document.querySelectorAll('li');
+        console.log(someli);
+        for (const li of someli) {
+            console.log(li.innerText);
+        }
+     </script>
+     <!-- querySelector   only first element -->
+      <script>
+        const lii=document.querySelector('#fruits-container li');
+        console.log(lii);
+        
+      </script>
+      <!-- style change using js -->
+      <script>
+        document.getElementById('fruits').style.color='blue'
+        document.getElementById('fruits').style.backgroundColor='yellow'
+        
+      </script>
+
+</body>
+
+</html>

@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin<n;;
+    int n=29;
+    string s=n+'0';
+    cout<<s<<endl;
+
 }

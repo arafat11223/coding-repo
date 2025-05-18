@@ -2,15 +2,21 @@
 using namespace std;
 int main()
 {
-    int a,b,c,d;
-    cin>>a>>b>>c>>d;
-    map<int,int>cnt;
-    cnt[a]++;
-    cnt[b]++;
-    cnt[c]++;
-    cnt[d]++;
-    cout<<4-cnt.size()<<endl;
-    
+    int a;
+    cin>>a;
+    for(int i=1;i<=a;i++)
+    {
+        int c,b;
+        cin>>c>>b;
+        if(c%b==0)
+        {
+            cout<<0<<endl;
+        }
 
-
+        else
+        {
+            cout<<(b-c%b)<<endl;
+        }
+    }
+    return 0;
 }
