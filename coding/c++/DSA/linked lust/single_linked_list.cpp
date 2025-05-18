@@ -18,8 +18,22 @@ void insert(int n)
     newnode->next=head;
     head=newnode;
 }
+void print()
+{
+    cout<<"element of single linked list are: ";
+    node *temp=head;
+    while(temp!=NULL)
+    {
+        
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+}
 int main()
 {
     insert(2);
     insert(3);
+    insert(6);
+    insert(367);
+    print();
 }

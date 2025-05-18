@@ -1,0 +1,18 @@
+h1{
+    color:lightcoral;
+}
+#fruits{
+    color:black
+}
+#place{
+    color:blue;
+}
+.place-list{
+    color:darkgoldenrod;
+}
+#fruits-container li{
+    color:blueviolet;
+}
+.front-text{
+    font-size: 30px;
+}

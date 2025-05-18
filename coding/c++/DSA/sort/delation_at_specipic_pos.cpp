@@ -11,9 +11,9 @@ int main()
     }
     int pos;
     cin>>pos;
-    for(int i=pos-1;i<n;i++)
+    for(int i=pos;i<=n;i++)
     {
-        arr[i]=arr[i+1];
+        arr[i-1]=arr[i];
     }
     n--;
     
