@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid blueviolet;
+            background-color: lightblue;
+            /* property name | duration | behavior */
+            transition: width 5s linear, background-color 3s ease-in 1s;
+        }
+
+        .box:hover {
+            width: 400px;
+            background-color: red;
+
+        }
+        .box1 {
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(58, 176, 89);
+            background-color: rgb(131, 183, 40);
+            /* property name | duration | behavior */
+            transition: transform 3s;
+            
+        }
+
+        .box1:hover {
+            transform: rotate(45deg) scale(1.5) translateX(150px);
+
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="box">box 1</div>
+    <div class="box1">box 2</div>
+    <div class="box2">box 3</div>
+
+</body>
+
+</html>

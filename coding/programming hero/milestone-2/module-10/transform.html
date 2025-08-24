@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container,
+        .inner,
+        .inner-1,
+        .inner-2,
+        .inner-3,
+        .inner-4,
+        .inner-5,
+        img ,.inner-8{
+            height: 200px;
+            width: 200px;
+        }
+
+        .container {
+            background-color: lightblue;
+            border: 2px solid blueviolet;
+            margin: 100px;
+            /* position: relative; */
+        }
+
+        .inner {
+            background-color: lightcoral;
+            border: 2px solid rgb(58, 226, 43);
+            /* display: none; */
+
+            transform: scale(0.25, 0.5);
+            /* ransform: rotate(45deg); */
+            /* position: absolute;
+            top: 50px;
+            left: 50px; */
+            /* transform: translate(50px, 50px); */
+            /* transform: translateX(50px); */
+            /* transform: translateY(50px); */
+            /* transform: translateX(-50%); */
+            /* transform: translateY(-50%); */
+            /* transform: translate(-50%, -50%); */
+        }
+
+        .inner-1 {
+            background-color: lightgrey;
+            border: 1px solid teal;
+            transform: rotate(45deg);
+        }
+
+        .inner-2 {
+            background-color: lightgreen;
+            border: 1px solid darkgreen;
+            transform: translate(-50px, 50px);
+        }
+
+        .inner-3 {
+            background-color: lightpink;
+            border: 1px solid darkred;
+            transform: scale(0.5) rotate(60deg) translate(100px, 50px);
+        }
+
+        .inner-4 {
+            background-color: rgb(255, 224, 248);
+            border: 1px solid orange;
+            transform: scale(0.5) translateX(100px) translateY(50px) rotate(45deg);
+        }
+
+        .inner-5:hover {
+            /* background-color: red; */
+            transform: rotate(45deg);
+        }
+        .inner-8:hover{
+            background-color: rgb(239, 239, 69);
+            transform: translateX(50px) translateY(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Explore transform and translate</h2>
+    <div class="container">
+        <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner-1">inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner-2">inner 3</div>
+    </div>
+    <div class="container">
+        <div class="inner-3">inner 3</div>
+    </div>
+    <div class="container">
+        <div class="inner-4">inner 4</div>
+    </div>
+    <div class="container">
+        <div class="inner-5">
+            <!-- <h2>inner-5</h2> -->
+            <img src="img/f.JPG" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-8">inner 8</div>
+    </div>
+
+</body>
+
+</html>
