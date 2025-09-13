@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summary tour of dom</title>
+</head>
+<body>
+    <main id="main-container">
+        
+         <!-- section*3>h1.section-title{section-title-$}+ul>li{item-$}*4 -->
+         <section>
+            <h1 class="section-title">section-title-1</h1>
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+            </ul>
+         </section>
+         <section id="second-section">
+            <h1 class="section-title">section-title-2</h1>
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+            </ul>
+         </section>
+         <section>
+            <h1 class="section-title">section-title-3</h1>
+            <ul id="append-list">
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+            </ul>
+         </section>
+        
+    </main>
+    <script>
+        console.log('embaded inside html file');
+    </script>
+    <script src="js/append.js"></script>
+    <script src="js/first.js"></script>
+    
+</body>
+</html>

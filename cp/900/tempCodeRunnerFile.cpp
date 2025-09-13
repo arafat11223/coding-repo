@@ -1,0 +1,1 @@
+str.erase(str.size()-2,1);
